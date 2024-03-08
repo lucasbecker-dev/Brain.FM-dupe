@@ -1,10 +1,11 @@
-/* Reset and Global Styles */
+/* remove default margins and padding */
 body,
 html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #4912f6;
 }
 
 h1,
@@ -14,161 +15,204 @@ h4,
 h5,
 h6,
 p {
-    letter-spacing: 0.05rem;
-    margin: 0;
-    padding: 0;
+  letter-spacing: 0.04rem;
+  margin: 0;
+  padding: 0;
 }
 
-/* Colors */
+/* colors */
 .color-white {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .color-gray {
-    color: #C9B8FC;
+  color: #c9b8fc;
 }
 
 .color-lt-gray {
-    color: #CCD0FD;
+  color: #ccd0fd;
 }
 
-/* Flexbox */
+/* flex options */
 .flex-div {
-    display: flex;
+  display: flex;
 }
 
 .flex-space-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .flex-center-content {
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex-column-wrap {
-    flex-flow: column wrap;
+  flex-flow: column wrap;
 }
 
 .flex-column-nowrap {
-    flex-flow: column nowrap;
+  flex-flow: column nowrap;
 }
 
 .flex-row-wrap {
-    flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .flex-row-nowrap {
-    flex-flow: row nowrap;
+  flex-flow: row nowrap;
 }
 
-/* Widths */
+/* widths options */
 .max-width-50vw {
-    max-width: 50vw;
+  max-width: 50vw;
+}
+
+.max-width-100vw {
+  max-width: 100vw;
 }
 
 .max-width-fit-content {
-    max-width: fit-content;
+  max-width: fit-content;
 }
 
-/* Display */
+/* display options */
 .inline-block {
-    display: inline-block;
+  display: inline-block;
 }
 
-/* Main Container */
+/* main container */
 #main-container {
-    background-color: #4912F6;
-    height: fit-content;
-    min-height: 100%;
-    padding: 18px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  min-height: 100vh;
+  padding: 16px;
+  width: 95vw;
+  min-width: fit-content;
 }
 
-/* Middle Container */
-#middle-container {
-    justify-content: center;
-    padding-left: 8px;
-    padding-top: 200px;
+/* middle container */
+
+.middle-column-1,
+.middle-column-2 {
+  max-width: 400px;
 }
 
-#middle-column-1,
-#middle-column-2 {
-    flex-shrink: 1;
-    max-width: 50vw;
+.middle-column-1 {
+  margin-right: 64px;
 }
 
-/* Logo Div */
+#middle-container-1 {
+  padding-top: 200px;
+  justify-content: center;
+}
+
+.middle-column-text-padding {
+  padding-top: 32px;
+}
+
+/* logo */
 #logo-div {
-    padding-left: 3%;
+  padding-left: 3%;
 }
 
-/* Nav Buttons */
+/* nav bar items */
 #nav-buttons {
-    padding-right: 16%;
+  padding-right: 16%;
 }
 
 #sign-in-button {
-    background-color: transparent;
-    border: transparent;
-    border-radius: 24px;
-    margin-right: 8px;
-    padding-left: 24px;
-    padding-right: 24px;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 24px;
+  margin-right: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 #sign-in-button:hover {
-    background-color: #1b075f;
+  background-color: #1b075f;
 }
 
-/* Free Trial Buttons */
+/* free trial buttons */
 #free-trial-button-1 {
-    padding-left: 24px;
-    padding-right: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 #free-trial-button-2 {
-    margin-top: 24px;
-    padding: 12px 48px;
+  margin-top: 24px;
+  padding: 12px 48px;
 }
 
 .free-trial-button {
-    background: linear-gradient(90deg, rgba(234, 158, 61, 1) 0%, rgba(238, 124, 56, 1) 100%);
-    border: transparent;
-    border-radius: 32px;
-    max-width: fit-content;
+  background: linear-gradient(90deg,
+      rgba(234, 158, 61, 1) 0%,
+      rgba(238, 124, 56, 1) 100%);
+  border: transparent;
+  border-radius: 32px;
+  max-width: fit-content;
 }
 
 .free-trial-button:hover {
-    background: linear-gradient(90deg, rgb(255, 145, 0) 0%, rgb(255, 94, 0)100%);
+  background: linear-gradient(90deg, rgb(255, 145, 0) 0%, rgb(255, 94, 0) 100%);
 }
 
-/* Text Styles */
+/* text options */
 #title-text-1 {
-    font-size: larger;
-    padding-bottom: 4px;
+  font-size: larger;
+  padding-bottom: 4px;
 }
 
 #title-text-2 {
-    font-size: x-large;
-    padding-bottom: 16px;
+  font-size: x-large;
+  padding-bottom: 16px;
 }
 
 #description-text {
-    font-size: small;
-    padding-bottom: 12px;
+  font-size: small;
+  padding-bottom: 12px;
 }
 
 #featured-in-text {
-    font-size: 0.5rem;
-    padding-bottom: 4px;
+  font-size: 0.5rem;
+  padding-bottom: 4px;
 }
 
-/* Image Styles */
+#see-the-science-text {
+  font-size: 0.8rem;
+  margin-bottom: 64px;
+}
+
+.text-size-lower-paragraphs {
+  font-size: small;
+}
+
+/* image options */
+#clout-image {
+  max-width: 256px;
+}
+
 #img-person-at-computer {
-    bottom: 80px;
-    display: inline-block;
-    max-height: 100%;
-    position: relative;
-    width: 512px;
+  bottom: 80px;
+  display: inline-block;
+  max-height: 100%;
+  position: relative;
+  width: 512px;
+  max-width: 48vw;
+}
+
+#img-brain-wave {
+  display: inline-block;
+  max-height: fit-content;
+  width: 312px;
+  max-width: 48vw;
+}
+
+#img-phase-locking-value {
+  display: inline-block;
+  max-height: fit-content;
+  width: 312px;
+  max-width: 48vw;
 }
