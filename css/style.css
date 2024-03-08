@@ -1,3 +1,164 @@
-h1 {
-    font-size: 10em;
+/* remove default margins and padding */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.05rem;
+}
+
+#main-container {
+    width: 100%;
+    height: fit-content;
+    min-height: 100%;
+    background-color: #4912F6;
+    padding: 18px;
+}
+
+
+#middle-container {
+    padding-top: 200px;
+    padding-left: 8px;
+    justify-content: center;
+}
+
+#middle-column-1,
+#middle-column-2 {
+    max-width: 50vw;
+    flex-shrink: 1;
+}
+
+#logo-div {
+    padding-left: 3%;
+}
+
+#nav-buttons {
+    padding-right: 16%;
+}
+
+#sign-in-button {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: 8px;
+}
+
+#sign-in-button:hover {
+    background-color: #1b075f;
+}
+
+#free-trial-button-1 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#free-trial-button-2 {
+    padding: 12px 48px;
+    margin-top: 24px;
+}
+
+.free-trial-button {
+    background: linear-gradient(90deg, rgba(234, 158, 61, 1) 0%, rgba(238, 124, 56, 1) 100%);
+    border-radius: 32px;
+    border: transparent;
+    max-width: fit-content;
+}
+
+.free-trial-button:hover {
+    background: linear-gradient(90deg, rgb(255, 145, 0) 0%, rgb(255, 94, 0)100%);
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.color-white {
+    color: #FFFFFF;
+}
+
+.color-gray {
+    color: #C9B8FC;
+}
+
+.color-lt-gray {
+    color: #CCD0FD;
+}
+
+.flex-div {
+    display: flex;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-center-content {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column-wrap {
+    flex-flow: column wrap;
+}
+
+.flex-column-nowrap {
+    flex-flow: column nowrap;
+}
+
+.flex-row-wrap {
+    flex-flow: row wrap;
+}
+
+.flex-row-nowrap {
+    flex-flow: row nowrap;
+}
+
+.max-width-50vw {
+    max-width: 50vw;
+}
+
+.max-width-fit-content {
+    max-width: fit-content;
+}
+
+#title-text-1 {
+    font-size: larger;
+    padding-bottom: 4px;
+}
+
+#title-text-2 {
+    font-size: x-large;
+    padding-bottom: 16px;
+}
+
+#description-text {
+    font-size: small;
+    padding-bottom: 12px;
+}
+
+#featured-in-text {
+    font-size: 0.5rem;
+    padding-bottom: 4px;
+}
+
+#img-person-at-computer {
+    display: inline-block;
+    position: relative;
+    bottom: 80px;
+    max-height: 100%;
+    width: 512px;
 }
